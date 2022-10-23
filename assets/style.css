@@ -81,3 +81,22 @@ a{
     margin: 25px;
     color:bisque;
 }
+
+@media (max-width:768px){
+    .info {
+        order: 2;
+    }
+    .profile {
+        margin: 20px 20px 30px 20px;
+        order: 1;
+    }
+    .profile_image {
+        max-width: 180px;
+    }
+    .info-button {
+        margin-top: 20px;
+    }
+    .title {
+        margin-bottom: 0;
+    }
+}
