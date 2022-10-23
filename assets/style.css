@@ -11,11 +11,7 @@ body {
 
 a{
     text-decoration: none;
-}
-
-.profile_image {
-    max-width: 250px;
-    
+    color: #222222;
 }
 
 .container {
@@ -37,7 +33,6 @@ a{
 }
 
 .info-text {
-    background-color:indianred;
     text-align: justify;
     flex: 1 0 100%;
     font-size: 20px;
@@ -45,10 +40,26 @@ a{
     border-radius: 10px;
 }
 
+.info-text span {
+    background-color: pink;
+    line-height: 2;
+    padding: 5px;
+    border-radius: 10px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
 .profile {
     display: flex;
     flex: 1 0 50%;
     justify-content: center;
+    align-items: center;
+}
+
+.profile_image {
+    max-width: 250px;
+    border-radius: 50%;
+    border: 5px solid bisque;
 }
 
 .info-button {
@@ -58,6 +69,11 @@ a{
     border-radius: 10px;
     background-color:bisque;
     margin: 0 10px;
+}
+
+.info-button:hover {
+    background-color:rgb(252, 238, 221);
+    color: black;
 }
 
 .title {
