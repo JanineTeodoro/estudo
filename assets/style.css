@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lato', Verdana, sans-serif;
 }
 body {
     background-color:#222222;
@@ -68,7 +70,7 @@ a{
     border: 1px solid black;
     border-radius: 10px;
     background-color:bisque;
-    margin: 0 10px;
+    margin: 20px 10px;
 }
 
 .info-button:hover {
@@ -80,6 +82,7 @@ a{
     text-align: center;
     margin: 25px;
     color:bisque;
+    font-weight: 700;
 }
 
 @media (max-width:768px){
@@ -96,7 +99,17 @@ a{
     .info-button {
         margin-top: 20px;
     }
+    .info-text {
+        font-size: 13px;
+    }
+    .info-text span {
+        padding: 3px 6px;
+        border-radius: 8px;
+    }
     .title {
         margin-bottom: 0;
+    }
+    .container {
+        padding: 25px 0;
     }
 }
