@@ -25,6 +25,7 @@ a{
     margin-left: 50%;
     transform: translateX(-50%);
     padding: 25px;
+    flex-wrap: wrap;
 }
 
 .info {
