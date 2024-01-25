@@ -4,39 +4,131 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', Verdana, sans-serif;
+    font-family: "Fira Code", monospace;
 }
 body {
     background: #1E2D3D;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1E2D3D;
+}
+
 a{
     text-decoration: none;
-    color: #222222;
+    color: #fff;
 }
 
 .table-intro {
-    color: #E5E9F0;
+    color: #607B96;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
-    padding: 0;
+    font-size: 16px;
 }
 
-ul li a {
-    
-    color: #E5E9F0;
+.name {
+    line-height: 50px;
+    min-width: 25dvw;
+    padding: 0 0 0 10px;
 }
 
-.intro {
+.tab-link {
+    width: 100%;
+    display: block;
+    color: #607B96;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.tab {
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    flex: 1;
+    position: relative;
+}
+
+.tab:last-child {
+    border-right-width: 0;
+}
+
+.selected .tab-link {
+    color: #fff;
+}
+
+.selected::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: #FEA55F;
+    height: 3px;
+    width: 100%;
+}
+
+#hello {
+    min-height: calc(100dvh - 50px);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    flex: 1 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
     color: #E5E9F0;
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 .title {
     color: #E5E9F0;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
 }
 
-h3 {
+h2 {
+    font-weight: 400;
+    font-size: 27px;
     color: #4D5BCE;
+}
+
+.profile {
+    flex: 1 0;
+    display: flex;
+    justify-content: center;
+}
+
+.profile img {
+    border: 8px solid #FEA55F;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.code-coment {
+    color: #607B96;
+    font-weight: 200;
+}
+
+.code-reserved {
+    color: #4D5BCE;
+}
+
+.code-variable {
+    color: #43D9AD;
+}
+
+.code-string {
+    color: #E99287;
 }
