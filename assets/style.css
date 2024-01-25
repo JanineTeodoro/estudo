@@ -132,3 +132,27 @@ h2 {
 .code-string {
     color: #E99287;
 }
+
+#about-me {
+    min-height: calc(100dvh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#projects {
+    min-height: calc(100dvh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contact {
+    min-height: calc(100dvh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
