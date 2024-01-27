@@ -1,5 +1,5 @@
 function activeHeader() {
-  const header = document.querySelectorAll('.tab');
+  const header = document.querySelectorAll('.tab.selectable');
 
   if (header.length) {
     header[1].classList.add('selected');
