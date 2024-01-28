@@ -2,8 +2,7 @@ function activeHeader() {
   const header = document.querySelectorAll('.tab.selectable');
 
   if (header.length) {
-    header[1].classList.add('selected');
-
+    header[0].classList.add('selected');
     function activeTab(index) {
       header.forEach((section) => {
         section.classList.remove('selected');
@@ -21,37 +20,47 @@ function activeHeader() {
 
 activeHeader();
 
-// const tabSection = [
-//   {
-//     tab: 'tab1',
-//     section: 'hello',
-//     isActive: true,
-//   },
-//   {
-//     tab: 'tab2',
-//     section: 'about-me',
-//     isActive: false,
-//   },
-// ];
+const tabSection = [
+  {
+    tab: 'tab1',
+    id: 'hello',
+    isActive: true,
+  },
+  {
+    tab: 'tab2',
+    id: 'about-me',
+    isActive: false,
+  },
+  {
+    tab: 'tab3',
+    id: 'projects',
+    isActive: false,
+  },
+  {
+    tab: 'tab4',
+    id: 'contact',
+    isActive: false,
+  },
+];
 
-// window.addEventListener('scroll', function () {
-//   const aboutMeTop = document
-//     .querySelector('#about-me')
-//     .getBoundingClientRect();
-//   console.log('top:', aboutMeTop.top);
-//   console.log('bottom:', aboutMeTop.bottom);
-//   if(aboutMeTop.top <= 0 && aboutMeTop.bottom > 0)
-//   tabSection.map
-//   // Obtém a posição vertical da sessão em relação ao topo da janela visível
-//   const posicaoSessao = section.getBoundingClientRect().top;
-//   console.log(posicaoSessao);
+const activateTab = (elemento) => {
+  if (!elemento.classList.contains('selected')) {
+    elemento.classList.add('selected');
+  }
+};
 
-//   // Verifica se a sessão está visível na janela
-//   if (posicaoSessao < window.innerHeight && posicaoSessao > 0) {
-//     // Se estiver visível, adiciona a classe 'ativada'
-//     header.classList.add('selected');
-//   } else {
-//     // Se não estiver visível, remove a classe 'ativada'
-//     header.classList.remove('selected');
-//   }
-// });
+window.addEventListener('scroll', function () {
+  tabSection.map((section) => {
+    const elemento = document.getElementById(section.id);
+    const elementoRect = elemento.getBoundingClientRect();
+    const tab = document.getElementById(section.tab);
+
+    if (elementoRect.top <= 50 && elementoRect.bottom > 50) {
+      console.log(section.tab);
+      console.log(tab);
+      activateTab(tab);
+    } else {
+      tab.classList.remove('selected');
+    }
+  });
+});

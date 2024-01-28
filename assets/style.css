@@ -71,7 +71,7 @@ a{
 
 #hello {
     min-height: calc(100dvh - 50px);
-    margin-top: 50px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,15 +133,7 @@ h2 {
     color: #E99287;
 }
 
-#about-me {
-    min-height: calc(100dvh - 50px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#projects {
+#about-me, #projects, #contact {
     min-height: calc(100dvh - 50px);
     display: flex;
     justify-content: center;
@@ -150,9 +142,5 @@ h2 {
 }
 
 #contact {
-    min-height: calc(100dvh - 50px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    height: 100dvh;
 }
