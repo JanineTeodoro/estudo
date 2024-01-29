@@ -7,14 +7,14 @@
     font-family: "Fira Code", monospace;
 }
 body {
-    background: #1E2D3D;
+    background: #011627;
 }
 
 .header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #1E2D3D;
+    background-color: #011627;
 }
 
 a{
