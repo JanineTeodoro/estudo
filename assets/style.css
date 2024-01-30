@@ -144,3 +144,36 @@ h2 {
 #contact {
     height: 100dvh;
 }
+
+.header-about-me {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    list-style-type: none;
+    border: 1px solid #607B96;
+    color: #607B96;
+}
+
+
+
+.info-header {
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #607B96;
+    padding: 5px 10px 5px 10px;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-title {
+    min-width: 25dvw;
+    color: #fff;
+}
+
+.info-header button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #607B96;
+}
