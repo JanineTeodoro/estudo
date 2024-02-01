@@ -169,7 +169,7 @@ h2 {
 .info-title {
     min-width: 25dvw;
     color: #fff;
-    
+
 }
 
 .info-header button {
@@ -177,4 +177,13 @@ h2 {
     background-color: transparent;
     cursor: pointer;
     color: #607B96;
+}
+
+.drawer-about-me, .drawer-about-me-contact {
+    color: #607B96;
+    list-style-type: none;
+}
+
+.drawer-about-me li:first-child {
+    color: #fff;
 }
