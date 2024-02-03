@@ -55,7 +55,7 @@ window.addEventListener('scroll', function () {
     const elementoRect = elemento.getBoundingClientRect();
     const tab = document.getElementById(section.tab);
 
-    if (elementoRect.top <= 50 && elementoRect.bottom > 50) {
+    if (elementoRect.top <= 0 && elementoRect.bottom > 0) {
       console.log(section.tab);
       console.log(tab);
       activateTab(tab);

@@ -8,6 +8,7 @@
 }
 body {
     background: #011627;
+    color: #607B96;
 }
 
 .header {
@@ -70,7 +71,7 @@ a{
 }
 
 #hello {
-    min-height: calc(100dvh - 50px);
+    min-height: 100dvh;
     padding-top: 50px;
     display: flex;
     justify-content: center;
@@ -135,6 +136,7 @@ h2 {
 
 #about-me, #projects, #contact {
     min-height: calc(100dvh - 50px);
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +181,7 @@ h2 {
     color: #607B96;
 }
 
-.drawer-about-me, .drawer-about-me-contact {
+.drawer-about-me, .drawer-about-me-contactgit {
     color: #607B96;
     list-style-type: none;
 }
