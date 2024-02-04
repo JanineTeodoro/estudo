@@ -135,8 +135,8 @@ h2 {
 }
 
 #about-me, #projects, #contact {
-    min-height: calc(100dvh - 50px);
-    padding-top: 50px;
+    min-height: 100dvh;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,45 +147,54 @@ h2 {
     height: 100dvh;
 }
 
-.header-about-me {
-    display: flex;
-    justify-content: flex-start;
+.about-me {
+    display: grid;
+    grid-template-areas:
+    "personal-info code"
+    "contact code";
     width: 100%;
-    list-style-type: none;
+    height: calc(100dvh - 30px);
+    padding-top: 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 25dvw 1fr;
+}
+
+.explorer-personal-info {
+    grid-area: personal-info;
     border: 1px solid #607B96;
-    color: #607B96;
 }
 
-
-
-.info-header {
-    border-width: 0 1px 0 0;
-    border-style: solid;
-    border-color: #607B96;
-    padding: 5px 10px 5px 10px;
-    min-width: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.info-title {
-    min-width: 25dvw;
+.header-drawer {
+    font-size: 16px;
+    font-weight: 400;
     color: #fff;
-
+    padding: 5px 10px;
+    border-bottom: 1px solid #607B96;
 }
 
-.info-header button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    color: #607B96;
+.drawer-about-me {
+    padding: 10px;
+    list-style: none;
 }
 
-.drawer-about-me, .drawer-about-me-contactgit {
-    color: #607B96;
-    list-style-type: none;
+.unicode {
+    font-size: 20px;
 }
 
-.drawer-about-me li:first-child {
-    color: #fff;
+.explorer-contact {
+    grid-area: contact;
+    border-right: 1px solid #607B96;
+    border-left: 1px solid #607B96;
+    border-bottom: 1px solid #607B96;
 }
+
+.drawer-contact {
+    padding: 10px;
+    line-height: 30px;
+}
+
+.code-area {
+    background-color: blue;
+    grid-area: code;
+}
+
