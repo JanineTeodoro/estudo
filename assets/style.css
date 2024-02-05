@@ -193,8 +193,52 @@ h2 {
     line-height: 30px;
 }
 
-.code-area {
-    background-color: blue;
-    grid-area: code;
+.header-code {
+    list-style: none;
+    padding: 5px 10px;
+    flex: 0 0;
+    min-width: fit-content;
+    border-right: 1px solid #607B96;
 }
+
+.header-code button {
+    background-color: transparent;
+    border: none;
+    color: #607B96;
+    padding: 0 10px;
+}
+
+.code-area ul {
+    display: flex;
+}
+
+.code-area {
+    grid-area: code;
+    border-top: 1px solid #607B96; 
+    border-right: 1px solid #607B96;
+    border-bottom: 1px solid #607B96;
+}
+
+.code-about-me {
+    border-top: 1px solid #607B96;
+    padding: 10px 0;
+}
+
+ol {
+    counter-reset: item;
+  }
+
+ol li {
+    display: block;
+    margin-bottom: .5em;
+    margin-left: 2.5em;
+  }
+ol li::before {
+    display: inline-block;
+    content: counter(item);
+    counter-increment: item;
+    width: 2em;
+    margin-left: -2em;
+    
+  }
 
