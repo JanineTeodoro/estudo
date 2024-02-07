@@ -239,6 +239,15 @@ ol li::before {
     counter-increment: item;
     width: 2em;
     margin-left: -2em;
-    
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .project-card img {
+    width: 350px;
   }
 
